@@ -1,5 +1,6 @@
 body {
   font-family: 'Roboto', sans-serif;
+  color: #ffffff;
 }
 
 ul {
@@ -31,7 +32,6 @@ h3 {
 }
 
 p {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -51,6 +51,7 @@ p {
   text-transform: uppercase;
   color: #2e2f42;
 }
+
 .logo-text {
   color: #4d5ae5;
 }
@@ -65,6 +66,12 @@ p {
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
+
+.header-link:hover,
+.header-link:focus {
+  color: #404bbf;
+}
+
 .header-contacts {
 }
 .header-contacts-list {
@@ -77,6 +84,11 @@ p {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+
+.header-contacts-item-link:hover,
+.header-contacts-item-link:focus {
+  color: #404bbf;
 }
 
 /* Hero Section */
@@ -92,24 +104,37 @@ p {
   color: #fff;
 }
 .hero-btn {
-  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
+
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
 }
-/* Features Section */
-.features-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #2e2f42;
+
+.hero-btn:hover,
+.hero-btn:focus {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #404bbf;
+  cursor: pointer;
 }
+
+/* Features Section */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .features-list {
 }
 .features-item {
@@ -122,7 +147,6 @@ p {
   color: #2e2f42;
 }
 .features-item-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -149,18 +173,20 @@ p {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  text-align: center;
   color: #2e2f42;
 }
 .team-member-text {
-  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
 }
 
 /* Our Portfolio */
 .portfolio-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11111;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
@@ -179,7 +205,6 @@ p {
   color: #2e2f42;
 }
 .portfolio-item-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -194,7 +219,6 @@ p {
 .logo-text {
 }
 .footer-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
